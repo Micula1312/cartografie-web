@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="it">
+<head> 
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cartografie di Prossimità</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div class="paper title-card tape">
+        <p class="eyebrow">installazione multimediale partecipativa</p>
+        <h1>Cartografie<br>di Prossimità</h1>
+        <p class="subtitle">memorie · emozioni · luoghi · relazioni</p>
+      </div>
+
+      <div class="paper intro-card">
+        <p>
+          Un archivio analogico-digitale di memorie urbane condivise,
+          costruito con la popolazione anziana del quartiere Bologna S. Ruffillo.
+        </p>
+      </div>
+
+      <div class="map-board" aria-label="Geografia emotiva della città">
+        <div class="map-text">geografia emotiva<br>della città</div>
+
+        <button class="pin p1" data-memory="La panchina dove ci si incontrava ogni pomeriggio.">😀</button>
+        <button class="pin p2" data-memory="Una strada cambiata: prima era piena di botteghe.">🏠</button>
+        <button class="pin p3" data-memory="Il mercato del sabato, le voci, i profumi, le persone.">❤️</button>
+        <button class="pin p4" data-memory="Qui giocavano i bambini negli anni '70.">⭐</button>
+        <button class="pin p5" data-memory="Un luogo di nostalgia, ma anche di appartenenza.">🌧️</button>
+        <button class="pin p6" data-memory="Una memoria sonora: campane, radio, passi.">🎵</button>
+
+        <svg class="lines" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path d="M18 24 L44 38 L62 18 L78 58 L50 74 L26 68 L18 24" />
+          <path d="M44 38 L26 68 M62 18 L50 74" />
+        </svg>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <article class="paper note pink rotate-left">
+        <h2>Cosa facciamo</h2>
+        <p>
+          Durante la residenza sviluppiamo due incontri partecipativi e una restituzione espositiva finale.
+          Luoghi, tempi, emozioni e ricordi si intrecciano in una mappa collettiva.
+        </p>
+      </article>
+
+      <article class="paper note blue rotate-right">
+        <h2>Per chi</h2>
+        <p>
+          Target: popolazione anziana del quartiere Bologna S. Ruffillo e comunità di prossimità.
+        </p>
+      </article>
+
+      <article class="paper note yellow">
+        <h2>Strumenti digitali</h2>
+        <p>
+          I dati raccolti diventano visualizzazioni, suoni, interazioni e paesaggi audiovisivi.
+          Il digitale è usato come strumento semplice, creativo e condiviso.
+        </p>
+      </article>
+
+      <article class="paper note green rotate-left">
+        <h2>Con chi</h2>
+        <p>
+          Facilitatrici:<br>
+          Micol Gelsi — artista multimediale<br>
+          Cloe Gelsi — arteterapeuta e psicologa
+        </p>
+      </article>
+    </section>
+
+    <section class="phases">
+      <div class="phase paper">
+        <span>01</span>
+        <h3>Costruzione della mappa</h3>
+        <p>Individuazione di luoghi significativi e periodi temporali.</p>
+      </div>
+      <div class="phase paper">
+        <span>02</span>
+        <h3>Dimensione affettiva</h3>
+        <p>Emoji, simboli, storie, ricordi, testi e contributi audio.</p>
+      </div>
+      <div class="phase paper">
+        <span>03</span>
+        <h3>Restituzione espositiva</h3>
+        <p>Archivio immersivo e interattivo: il dato diventa esperienza.</p>
+      </div>
+    </section>
+
+    <section class="digital-panel">
+      <div class="ui-window">
+        <div class="ui-top">
+          <span></span><span></span><span></span>
+          <strong>archivio_emotivo.xlsx → visualizzazione</strong>
+        </div>
+        <div class="table">
+          <div>luogo</div><div>tempo</div><div>emozione</div><div>ricordo</div>
+          <div>mercato</div><div>anni 70</div><div>gioia</div><div>voci</div>
+          <div>parco</div><div>anni 80</div><div>amicizia</div><div>giochi</div>
+          <div>piazza</div><div>oggi</div><div>nostalgia</div><div>incontro</div>
+        </div>
+      </div>
+    </section>
+
+    <aside class="memory-pop" id="memoryPop" aria-live="polite">
+      <button id="closePop" aria-label="chiudi">×</button>
+      <p id="memoryText">Clicca un emoji sulla mappa.</p>
+    </aside>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
